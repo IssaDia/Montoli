@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Montoli
+			{% endblock %}
+		</title>
+		<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css"> {% block stylesheets %}{% endblock %}
+		</head>
+		<body>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="{{ path('home') }}"">Montoli</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarColor02">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="{{ path('home') }}">Home
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ path('mission') }}">Mission</a>
+						</li>
+						<li class="nav-item">	
+							<a class="nav-link" href="{{ path('vision') }}">Visions</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ path('collaborations') }}">Collaborations</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link" href="{{ path('expertise') }}">Expertise</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link" href="{{ path('competence') }}">Compétences</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link" href="{{ path('contact') }}">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+		</body>
+	</html>
